@@ -9,6 +9,7 @@ function LoginScreen({navigation}) {
     <SafeAreaView 
     style={{
       flex:1,
+      backgroundColor:'white'
     
     }}>
       <View style={{height:height*0.75}} >
