@@ -7,8 +7,8 @@ const ShopCard = () => {
  
   return (
     <View style={styles.card}>
-      <View style={{height:100 ,alignItems:'center'}}>
-        <Image style={{flex:1,resizeMode:'contain' source}}/>
+      <View >
+        <Image style={{flex:1,resizeMode:'contain' }} source={require('store.jpg')}/>
 
       </View>
     </View>
