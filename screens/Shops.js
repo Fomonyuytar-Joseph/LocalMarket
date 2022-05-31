@@ -1,12 +1,21 @@
-import { View, Text  } from 'react-native'
+import { View, Text, FlatList  } from 'react-native'
 import React from 'react'
 import ShopCard from '../Components/ShopCard'
+import stores from '../const/stores'
 
 const Shops = () => {
   
   return (
     <View>
-      <ShopCard/>
+      <FlatList 
+      numColumns={2} 
+      data={stores}
+      renderItem={({item})=>(
+        <ShopCard item={item}/>
+      )}
+      
+      />
+      
 
     </View>
   )
