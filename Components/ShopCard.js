@@ -12,6 +12,8 @@ const ShopCard = () => {
       <Image source={require('../assets/images/shop.jpg')} style={{  width:'100%' ,height:'70%' ,}} />
       <View>
         <Text>Mami Puff</Text>
+        <Text>Mami Puff</Text>
+        <Text>Mami Puff</Text>
       </View>
       
     </View>
