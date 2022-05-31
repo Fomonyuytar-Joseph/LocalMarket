@@ -7,10 +7,13 @@ const ShopCard = () => {
  
   return (
     <View style={styles.card}>
-      <View >
-        <Image style={{flex:1,resizeMode:'contain' }} source={require('store.jpg')}/>
-
+     
+        
+      <Image source={require('../assets/images/shop.jpg')} style={{  width:'100%' ,height:'70%' ,}} />
+      <View>
+        <Text>Mami Puff</Text>
       </View>
+      
     </View>
   )
 }
@@ -20,10 +23,10 @@ const styles= StyleSheet.create({
      backgroundColor:'#e5e5e5',
      width:cardWidth,
      marginTop:15,
-     marginLeft:10,
+    // //  marginLeft:10,
      borderRadius:5,
      marginBottom:20,
-     padding:15
+    //  padding:15
      
 
 
