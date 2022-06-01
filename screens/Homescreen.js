@@ -17,7 +17,7 @@ const Homescreen = () => {
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
                     img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
-                    name: 'Siviwe'
+                    name: 'Joseph'
                     }}/>
                     <Spacer height={20}/>
                     
