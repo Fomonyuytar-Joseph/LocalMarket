@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions, Image } from 'react-native'
 import React from 'react'
-import values from '../../../constants/values'
+import values from '../const/values'
 const { width } = Dimensions.get("screen")
 const Category = ({category, onPress}) => {
   return (
