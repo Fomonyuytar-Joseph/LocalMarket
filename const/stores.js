@@ -17,7 +17,7 @@ const stores=[
     },
     {
         id:3,
-        name:'Bakery',
+        name:'Shoez',
         location:'Central market',
         time:'1pm-5pm' ,
         img:require('../assets/images/shop.jpg')
@@ -65,6 +65,14 @@ const stores=[
     },
     {
         id:9,
+        name:'Mami Canda',
+        location:'Bokwaongo Market',
+        time:'3pm-8pm' ,
+        img:require('../assets/images/shop.jpg')
+
+    },
+    {
+        id:10,
         name:'Mami Canda',
         location:'Bokwaongo Market',
         time:'3pm-8pm' ,

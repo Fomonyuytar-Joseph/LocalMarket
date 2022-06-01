@@ -1,4 +1,4 @@
-import { View, Text ,StyleSheet ,Dimensions, Image} from 'react-native'
+import { View, Text ,StyleSheet ,Dimensions, Image ,TouchableOpacity} from 'react-native'
 
 const {height ,width}= Dimensions.get('window')
 const cardWidth=width/2.2
@@ -6,6 +6,7 @@ const cardWidth=width/2.2
 const ShopCard = ({item}) => {
  
   return (
+    <TouchableOpacity>
     <View style={styles.card}>
      
         
@@ -17,11 +18,12 @@ const ShopCard = ({item}) => {
       </View>
       
     </View>
+    </TouchableOpacity>
   )
 }
 const styles= StyleSheet.create({
  card:{
-     height:height/2.8,
+     height:height/2,
      backgroundColor:'#e5e5e5',
      width:cardWidth,
      marginTop:15,
