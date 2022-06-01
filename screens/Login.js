@@ -1,10 +1,14 @@
 import { View, Text ,SafeAreaView ,Dimensions ,Image ,StyleSheet} from 'react-native'
-import React from 'react'
+import React ,{useState}from 'react'
+import CustomButton from '../Components/CustomButton'
+import CustomInput from '../Components/CustomInput'
 
 const {height ,width}= Dimensions.get('window')
 
 
-const Login = () => {
+const Login = ({navigation}) => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   
   return (
    <SafeAreaView style={{flex:1 ,backgroundColor:'white'}}>
@@ -17,6 +21,14 @@ const Login = () => {
        <View style={{alignItems:'center'}}>
          <Image source={require('../assets/images/welcome.png')} style={styles.welimage}/>
         
+       </View >
+
+       <View style={{flex:1,alignItems:'center', height:height/2}}>
+         <CustomInput placeholder='Email' value={email} setValue={setEmail} inputText='Email'/>
+         <CustomInput placeholder='password' value={password} setValue={setPassword} inputText='Password:' secureTextEntry={true}/>
+         <CustomButton navigation={navigation} Btext="Login" onSignInPress={onSignInPress}/>
+
+
        </View>
       
      </View>
@@ -44,6 +56,7 @@ const styles=StyleSheet.create({
      fontWeight:'bold',
      fontSize:36,
      color:'#3C3C3C'
+
    }
 
 
