@@ -8,6 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Shops from './screens/Shops';
 import Homescreen from './screens/Homescreen';
+import ProductsDetails from './Components/ProductsDetails';
 
 
 
@@ -23,6 +24,8 @@ export default function App() {
         <Stack.Screen component={Shops} name="Shops" options={{headerShown:false}}/>
         <Stack.Screen component={Login} name="Login" options={{headerShown:false}}/>
         <Stack.Screen component={Homescreen} name="Homescreen" options={{headerShown:false}}/>
+        <Stack.Screen component={ProductsDetails} name="ProductDetails" options={{headerShown:false}}/>
+
 
       </Stack.Navigator>
       

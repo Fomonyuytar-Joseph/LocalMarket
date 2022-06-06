@@ -11,22 +11,26 @@ import { categories, transactions ,Sliderdata } from '../const/data'
 import Carousel from 'react-native-snap-carousel'
 import { Dimensions } from 'react-native'
 import BannerSlider from '../Components/BannerSlider'
+import { useState } from 'react'
+import { ScrollView } from 'react-native-gesture-handler'
 
 const {height ,width}= Dimensions.get('window')
 
-const Homescreen = () => {
+
+const Homescreen = ({navigation}) => {
      
   const renderBanner=({item, index})=>{
     return <BannerSlider data={item} />;
 
   }
 
-
+  const [carousel, setCarousel] = useState(null);
 
 
 
   return (
     <SafeAreaView style={[styles.container ]}>
+      <ScrollView>
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
                     img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
@@ -46,15 +50,15 @@ const Homescreen = () => {
                 data={categories}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
+                renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)}  navigation={navigation}/>}
             />
         </View>
-        <View>
+        <View style={Sliderstyles.slider}>
 
           <Carousel
 
 
-          ref={(c) => { this._carousel = c; }}
+             ref={c => { setCarousel(c); }}
           data={Sliderdata}
           renderItem={renderBanner}
           sliderWidth={width-40}
@@ -67,13 +71,56 @@ const Homescreen = () => {
           
           />
 
-          <Text>HI</Text>
+         
         </View>
-                   
+
+        {/* New Products */}
+        
+     <View style={styles.horizontalPaddingView}>
+        <Text style={values.h2Style}>New Products</Text>
+                     <Spacer height={20} />
+                    </View>
+                    
+                    <View style={{paddingLeft: values.horizontalPadding}}>
+            <FlatList
+                horizontal
+                data={categories}
+                showsHorizontalScrollIndicator={false}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
+            />
+        </View>
+
+
+
+   {/* Featured products */}
+       
+     <View style={[styles.horizontalPaddingView ,{flex:1 }]}>
+        <Text style={values.h2Style}>Featured products </Text>
+                     <Spacer height={20} />
+                    </View>
+                    
+                    <View style={{paddingLeft: values.horizontalPadding}}>
+            <FlatList
+                horizontal
+                data={categories}
+                showsHorizontalScrollIndicator={false}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
+            />
+        </View>
+        </ScrollView>              
     </SafeAreaView>
     
   )
 }
 
 
+const Sliderstyles = StyleSheet.create({
+  slider:{
+    margin:15,
+    alignItems:'center',
+    justifyContent:'center'
+  }
+})
 export default Homescreen
