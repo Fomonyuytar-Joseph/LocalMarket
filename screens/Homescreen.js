@@ -7,17 +7,30 @@ import Category from '../Components/Category'
 import Homebutton from '../Components/Homebutton'
 import Homeinput from '../Components/Homeinput'
 import values from '../const/values'
-import { categories, transactions } from '../const/data'
+import { categories, transactions ,Sliderdata } from '../const/data'
+import Carousel from 'react-native-snap-carousel'
+import { Dimensions } from 'react-native'
+import BannerSlider from '../Components/BannerSlider'
 
-
+const {height ,width}= Dimensions.get('window')
 
 const Homescreen = () => {
+     
+  const renderBanner=({item, index})=>{
+    return <BannerSlider data={item} />;
+
+  }
+
+
+
+
+
   return (
     <SafeAreaView style={[styles.container ]}>
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
                     img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
-                    name: 'Joseph'
+                    name: 'Jos'
                     }}/>
                     <Spacer height={20}/>
                     
@@ -35,6 +48,26 @@ const Homescreen = () => {
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
             />
+        </View>
+        <View>
+
+          <Carousel
+
+
+          ref={(c) => { this._carousel = c; }}
+          data={Sliderdata}
+          renderItem={renderBanner}
+          sliderWidth={width-40}
+          itemWidth={300}
+          loop={true}
+          
+          
+          
+          
+          
+          />
+
+          <Text>HI</Text>
         </View>
                    
     </SafeAreaView>

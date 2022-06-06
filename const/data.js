@@ -87,4 +87,24 @@ const cards = [
     }
 ]
 
-export {categories, transactions, transfer, cards}
+
+const Sliderdata= [
+    {
+      title: 'First Game',
+      image: require('../assets/images/halo-infinite.jpeg'),
+    },
+    {
+      title: 'Second Game',
+      image: require('../assets/images/pokemon-unite.jpeg'),
+    },
+    {
+      title: 'Third Game',
+      image: require('../assets/images/battlefield-2042.webp'),
+    },
+    {
+      title: 'Fourth Game',
+      image: require('../assets/images/spiderman.webp'),
+    },
+  ];
+
+export {categories, transactions, transfer, cards ,Sliderdata}
