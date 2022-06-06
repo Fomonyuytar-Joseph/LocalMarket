@@ -77,7 +77,7 @@ const Homescreen = ({navigation}) => {
         {/* New Products */}
         
      <View style={styles.horizontalPaddingView}>
-        <Text style={values.h2Style}>New Products</Text>
+        <Text style={values.h2Style}>Shops</Text>
                      <Spacer height={20} />
                     </View>
                     
@@ -87,7 +87,7 @@ const Homescreen = ({navigation}) => {
                 data={categories}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
+                renderItem={({ item }) => <Category category={item} onPress={() =>navigation.navigate('Shops')} />}
             />
         </View>
 

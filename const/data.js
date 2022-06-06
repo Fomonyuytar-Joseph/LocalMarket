@@ -2,21 +2,21 @@ const categories = [
     {
         id: 1,
         img: require('../assets/images/call-center.png'),
-        heading: 'Service',
+        heading: 'Shoe',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#F6AFB0',
     },
     {
         id: 2,
         img: require('../assets/images/lightning.png'),
-        heading: 'Electricity',
+        heading: 'Electronics',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#8ECC81',
     },
     {
         id: 3,
         img: require('../assets/images/piggy-bank.png'),
-        heading: 'Savings',
+        heading: 'Dresses',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
     }
