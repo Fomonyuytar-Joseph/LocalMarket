@@ -4,7 +4,7 @@ import values from '../const/values'
 const { width } = Dimensions.get("screen")
 const Category = ({category, onPress}) => {
   return (
-    <TouchableOpacity onPress={() => onPress(category.heading)}>
+    <TouchableOpacity onPress={ onPress}>
       <View style={[styles.container, {backgroundColor: category.backgroundColor}]}>
         <Image style={styles.image} source={category.img}/>
           

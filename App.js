@@ -24,7 +24,7 @@ export default function App() {
         <Stack.Screen component={Shops} name="Shops" options={{headerShown:false}}/>
         <Stack.Screen component={Login} name="Login" options={{headerShown:false}}/>
         <Stack.Screen component={Homescreen} name="Homescreen" options={{headerShown:false}}/>
-        <Stack.Screen component={ProductsDetails} name="ProductDetails" options={{headerShown:false}}/>
+        <Stack.Screen component={ProductsDetails} name="ProductsDetails" options={{headerShown:false}}/>
 
 
       </Stack.Navigator>

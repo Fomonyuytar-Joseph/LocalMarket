@@ -107,4 +107,9 @@ const Sliderdata= [
     },
   ];
 
-export {categories, transactions, transfer, cards ,Sliderdata}
+
+  const Detailsdata=[{
+      img:require('../assets/images/plant1.png')
+  }]
+
+export {categories, transactions, transfer, cards ,Sliderdata ,Detailsdata}
