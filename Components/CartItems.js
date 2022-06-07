@@ -15,9 +15,9 @@ const CartItems = ({item}) => {
    </View>
 
 <View>
-<Text>+</Text>
+    <View><Text>+</Text></View>
 <Text>2</Text>
-<Text>-</Text>
+<View><Text>-</Text></View>
 
 </View>
 
