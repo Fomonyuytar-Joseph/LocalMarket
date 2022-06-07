@@ -108,8 +108,30 @@ const Sliderdata= [
   ];
 
 
-  const Detailsdata=[{
-      img:require('../assets/images/plant1.png')
-  }]
+  const Productdata=[{
+         id:1,
+         name:'ps4',
+         img:require('../assets/images/ps4.jpg'),
+         price:100,
+        },
+     {  
+         id:2,
+        name:'xbox',
+        img:require('../assets/images/xbox.jpg'),
+        price:100
+    },
 
-export {categories, transactions, transfer, cards ,Sliderdata ,Detailsdata}
+        {
+       id:3,
+       name:'ps5',
+       img:require('../assets/images/ps5.jpg'),
+       price:100
+
+
+        }
+    
+    
+    
+    ]
+
+export {categories, transactions, transfer, cards ,Sliderdata ,Productdata }
