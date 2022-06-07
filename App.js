@@ -26,7 +26,7 @@ export default function App() {
         <Stack.Screen component={Login} name="Login" options={{headerShown:false}}/>
         <Stack.Screen component={Homescreen} name="Homescreen" options={{headerShown:false}}/>
         <Stack.Screen component={ProductsDetails} name="ProductsDetails" options={{headerShown:false}}/>
-        <Stack.Screen component={Cart} name="Cart" options={{headerShown:false}}/>
+        <Stack.Screen component={Cart} name="Cart" />
 
 
       </Stack.Navigator>

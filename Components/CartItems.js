@@ -1,9 +1,9 @@
-import { View, Text ,Image  , StyleSheet ,SafeAreaView} from 'react-native'
+import { View, Text ,Image  , StyleSheet ,SafeAreaView ,TouchableOpacity} from 'react-native'
 import React from 'react'
 
 const CartItems = ({item}) => {
   return (
-  <SafeAreaView style={{marginTop:60 ,flex:1}}>
+  <SafeAreaView style={{marginTop:10 ,flex:1}}>
   <View style={styles.container} >
 <View>
   <Image   source={item.img} style={{height:100, width:110 ,resizeMode: 'contain'}} />
@@ -15,20 +15,21 @@ const CartItems = ({item}) => {
    </View>
 
 <View>
-    <View><Text>+</Text></View>
-<Text>2</Text>
-<View><Text>-</Text></View>
+    <View style={styles.btn}><TouchableOpacity><Text  style={styles.innerText}>+</Text></TouchableOpacity></View>
+<Text style={styles.text}>2</Text>
+<View style={styles.btn}><TouchableOpacity><Text  style={styles.innerText}>-</Text></TouchableOpacity></View>
 
 </View>
 
 <View>
-<Text> 2 X{item.price} f</Text>
+<Text> 2 X{item.price} </Text>
 
 </View>
-
-<View>
-  <Text> X</Text>
+<TouchableOpacity> 
+<View style={styles.btn}>
+<Text style={styles.innerText}> x</Text>
 </View>
+</TouchableOpacity>
 
 
   </View>
@@ -43,8 +44,38 @@ const styles = StyleSheet.create({
       flex:1,
       flexDirection:'row',
       justifyContent:'space-around',
-      alignItems:'center'
+      alignItems:'center',
+      backgroundColor:'white',
+      borderRadius:20,
+      margin: 5
+    },
+
+    btn:{
+      backgroundColor:'#6C63FF',
+      height: 25,
+      width: 25,
+      borderRadius:100,
+      alignItems:'center',
+      justifyContent:'center',
+      
+    },
+    text:{
+
+      
+      fontSize:15,
+      textAlign:'center'
+
+
+    },
+    innerText:{
+      color:'white',
+      textAlign:'center',
+      justifyContent:'center',
+      alignItems:'center',
+      alignContent:'center'
+      
     }
+    
 
 
 })

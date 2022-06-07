@@ -91,15 +91,15 @@ const cards = [
 const Sliderdata= [
     {
       title: 'First Game',
-      image: require('../assets/images/halo-infinite.jpeg'),
+      image: require('../assets/images/dad.jpg'),
     },
     {
       title: 'Second Game',
-      image: require('../assets/images/pokemon-unite.jpeg'),
+      image: require('../assets/images/dad.jpg'),
     },
     {
       title: 'Third Game',
-      image: require('../assets/images/battlefield-2042.webp'),
+      image: require('../assets/images/toys.jpg'),
     },
     {
       title: 'Fourth Game',
