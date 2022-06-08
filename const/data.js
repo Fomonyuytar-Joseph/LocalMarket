@@ -1,91 +1,39 @@
 const categories = [
     {
         id: 1,
-        img: require('../assets/images/call-center.png'),
+        img: require('../assets/CategoryImages/shoe.webp'),
         heading: 'Shoe',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#F6AFB0',
     },
     {
         id: 2,
-        img: require('../assets/images/lightning.png'),
-        heading: 'Electronics',
+        img: require('../assets/CategoryImages/iphone13.png'),
+        heading: 'Phones',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#8ECC81',
     },
     {
         id: 3,
-        img: require('../assets/images/piggy-bank.png'),
+        img: require('../assets/CategoryImages/shirt.png'),
         heading: 'Dresses',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
-    }
-];
-
-const transactions = [
-    {
-        id: 1,
-        img: require('../assets/images/mortarboard.png'),
-        heading: 'Education',
-        price: 'R 149 000',
-        backgroundColor: '#F6AFB0',
     },
     {
-        id: 2,
-        img: require('../assets/images/burger.png'),
-        heading: 'Food',
-        price: 'R 3 500',
-        backgroundColor: '#8ECC81',
-    },
-    {
-        id: 3,
-        img: require('../assets/images/taxi.png'),
-        heading: 'Transport',
-        price: 'R 2 750',
+        id: 4,
+        img: require('../assets/CategoryImages/cosmetics3.jpg'),
+        heading: 'Cosmetics',
+        paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
     }
 ];
 
-const transfer = [
-    {
-        id: 1,
-        img: require('../assets/images/south-africa.png'),
-        heading: 'You send',
-        price: 'R 149 000',
-        isSending: true,
-    },
-    {
-        id: 2,
-        img: require('../assets/images/united-states.png'),
-        heading: 'They receive',
-        price: '$ 9 197,53',
-        isSending: false,
-    }
-];
 
-const cards = [
-    {
-        id: 1,
-        img: require('../assets/images/maestro.png'),
-        price: 'R 149 000',
-        cardNum: '8757197138425741',
-        backgroundColor: '#80CEEE',
-    },
-    {
-        id: 2,
-        img: require('../assets/images/visa.png'),
-        price: '$ 9 197,53',
-        cardNum: '8757197138425741',
-        backgroundColor: '#8ECC81',
-    },
-    {
-        id: 3,
-        img: require('../assets/images/visa.png'),
-        price: '$ 9 197,53',
-        cardNum: '8757197138425741',
-        backgroundColor: '#80CEEE',
-    }
-]
+
+
+
+
 
 
 const Sliderdata= [
@@ -103,7 +51,7 @@ const Sliderdata= [
     },
     {
       title: 'Fourth Game',
-      image: require('../assets/images/spiderman.webp'),
+      image: require('../assets/images/beauty.jpg'),
     },
   ];
 
@@ -134,4 +82,64 @@ const Sliderdata= [
     
     ]
 
-export {categories, transactions, transfer, cards ,Sliderdata ,Productdata }
+
+    const Shopsdata=[
+        {
+       id:1,
+       heading:'phone shop',
+
+       img:require('../assets/ShopImages/shop.png'),
+          
+    
+            },
+        {
+       id:2,
+       heading:'caffe shop',
+
+       img:require('../assets/ShopImages/cafe.jpg'),
+          
+    
+            },
+        {
+       id:3,
+       heading:'Nike Shop',
+
+       img:require('../assets/ShopImages/nike.png'),
+          
+    
+            },
+        {
+       id:4,
+       heading:'Online Shop',
+
+       img:require('../assets/ShopImages/shop2.jpg'),
+          
+    
+            },
+];
+
+
+const  NewProductdata=[
+    {
+      id:1,
+      heading:'Shoe',
+      img:require('../assets/NewImages/point.png'),
+  },
+    {
+      id:2,
+      heading:'Iphone X',
+      img:require('../assets/NewImages/iphonex.jpg'),
+  },
+    {
+      id:3,
+      heading:'School Bag',
+      img:require('../assets/NewImages/bag2.jpg'),
+  },
+    {
+      id:4,
+      heading:'adidas shoe',
+      img:require('../assets/NewImages/adidas2.jpg'),
+  },
+] 
+
+export {categories,Sliderdata ,Productdata,Shopsdata ,NewProductdata}

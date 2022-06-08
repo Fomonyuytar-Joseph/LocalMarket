@@ -7,7 +7,7 @@ import Category from '../Components/Category'
 import Homebutton from '../Components/Homebutton'
 import Homeinput from '../Components/Homeinput'
 import values from '../const/values'
-import { categories, transactions ,Sliderdata } from '../const/data'
+import { categories, Shopsdata ,Sliderdata ,NewProductdata } from '../const/data'
 import Carousel from 'react-native-snap-carousel'
 import { Dimensions } from 'react-native'
 import BannerSlider from '../Components/BannerSlider'
@@ -74,7 +74,7 @@ const Homescreen = ({navigation}) => {
          
         </View>
 
-        {/* New Products */}
+        {/* Shops */}
         
      <View style={styles.horizontalPaddingView}>
         <Text style={values.h2Style}>Shops</Text>
@@ -84,7 +84,7 @@ const Homescreen = ({navigation}) => {
                     <View style={{paddingLeft: values.horizontalPadding}}>
             <FlatList
                 horizontal
-                data={categories}
+                data={Shopsdata}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => <Category category={item} onPress={() =>navigation.navigate('Shops')} />}
@@ -103,7 +103,7 @@ const Homescreen = ({navigation}) => {
                     <View style={{paddingLeft: values.horizontalPadding}}>
             <FlatList
                 horizontal
-                data={categories}
+                data={NewProductdata}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
