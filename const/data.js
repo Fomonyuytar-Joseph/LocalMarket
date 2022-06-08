@@ -95,7 +95,7 @@ const Sliderdata= [
     },
     {
       title: 'Second Game',
-      image: require('../assets/images/dad.jpg'),
+      image: require('../assets/images/computer.jpg'),
     },
     {
       title: 'Third Game',
