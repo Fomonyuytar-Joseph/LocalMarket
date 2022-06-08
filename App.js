@@ -10,6 +10,7 @@ import Shops from './screens/Shops';
 import Homescreen from './screens/Homescreen';
 import ProductsDetails from './Components/ProductsDetails';
 import Cart from './Components/Cart';
+import ShoeScreen from './screens/ShoeScreen';
 
 
 
@@ -27,6 +28,7 @@ export default function App() {
         <Stack.Screen component={Homescreen} name="Homescreen" options={{headerShown:false}}/>
         <Stack.Screen component={ProductsDetails} name="ProductsDetails" options={{headerShown:false}}/>
         <Stack.Screen component={Cart} name="Cart" />
+        <Stack.Screen component={ShoeScreen} name="Shoes"  />
 
 
       </Stack.Navigator>

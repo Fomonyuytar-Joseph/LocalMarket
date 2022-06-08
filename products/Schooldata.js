@@ -7,101 +7,92 @@ const School=[
         name:'All Star',
         img:require('../assets/SchoeImages/allstar.png'),
         price:10000,
-        seller:'',
-        description:''
+        seller:'Pa Shoe',
+        description:'This Show is brand new and very affordable'
     
     },
     {
         id:2,
-        name:'',
-        img:'',
-        price:'',
-        seller:'',
-        description:''
+        name:'Nike Shoe',
+        img:require('../assets/SchoeImages/nike.png'),
+        price:100000,
+        seller:'Pa Shoe',
+        description:'This Show is brand new and very affordable'
     
     },
     {
         id:3,
-        name:'',
-        img:'',
-        price:'',
-        seller:'',
-        description:''
+        name:' Shoe',
+        img:require('../assets/SchoeImages/nike2.png'),
+        price:10000,
+        seller:'Pa Shoe',
+        description:'This Show is brand new and very affordable'
     
     },
-        {
-               id:3,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
+        
         {
                id:4,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
+             name:'Nike shoe',
+            img:require('../assets/SchoeImages/nike3.png'),
+              price:10000,
+             seller:'Pa Shoe',
+              description:'This Show is brand new and very affordable'
     
                 
             },
         {
                id:5,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
+             name:'Classic Shoe',
+            img:require('../assets/SchoeImages/shoe.png'),
+              price:20000,
+             seller:'Pa Shoe',
+              description:'This Show is brand new and very affordable'
     
                 },
     
         {
                id:6,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
+             name:'Shoe',
+            img:require('../assets/SchoeImages/shoe2.png'),
+              price:10000,
+             seller:'Pa Sho',
+              description:'This Show is brand new and very affordable'
     
                 },
         {
                id:7,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
+             name:'Shoe',
+            img:require('../assets/SchoeImages/shoe3.png'),
+              price:10000,
+             seller:'Pa Shoe',
+              description:'This Show is brand new and very affordable'
     
                 },
         {
                id:8,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
+             name:'Vapor',
+            img:require('../assets/SchoeImages/theo.png'),
+              price:10000,
+             seller:'Pa Shoe',
+              description:'This Show is brand new and very affordable'
     
                 },
         {
                id:9,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
+             name:'vans',
+            img:require('../assets/SchoeImages/vans.png'),
+              price:10000,
+             seller:'Pa Shoe',
+              description:'This Show is brand new and very affordable'
     
                 },
         {
                id:10,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
+             name:'Classic Shoe',
+            img:require('../assets/SchoeImages/vans.png'),
+              price:10000,
+             seller:'Pa Shoe',
+             description:'This Show is brand new and very affordable'
                 },
     
     
