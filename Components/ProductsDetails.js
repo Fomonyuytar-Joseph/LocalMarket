@@ -1,4 +1,4 @@
-import {View, SafeAreaView, Image, Text, StyleSheet ,ScrollView} from 'react-native';
+import {View, SafeAreaView, Image, Text, StyleSheet ,ScrollView,TouchableOpacity} from 'react-native';
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {Sliderdata} from '../const/data'
@@ -15,7 +15,9 @@ const ProductsDetails = ({navigation ,route}) => {
         }}>
 <View   style={styles.header}>
 <Icon name="arrow-back" size={28} onPress={() => navigation.goBack()} />
-<Icon name="shopping-cart" size={28} />
+<TouchableOpacity>
+<Icon name="shopping-cart" size={28} onPress={()=>navigation.navigate('Cart')}/>
+</TouchableOpacity>
 
 </View>
 

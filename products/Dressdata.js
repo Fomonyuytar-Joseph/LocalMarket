@@ -69,7 +69,7 @@ const Dress=[
       {
         id: 9,
         name: "vans",
-        img: require("../assets/DressImages/dr4.jfif"),
+        img: require("../assets/DressImages/dr4.png"),
         price: 10000,
         seller: "Legit Fashion",
         description: "This Show is brand new and very affordable",

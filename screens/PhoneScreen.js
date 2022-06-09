@@ -1,7 +1,8 @@
 import { View, FlatList} from 'react-native'
-import React from 'react'
+import {React,useState}  from 'react'
 import Card from '../Components/Card'
 import Phones from '../products/Phonedata'
+
 
 const PhoneScreen = ({navigation}) => {
   return (

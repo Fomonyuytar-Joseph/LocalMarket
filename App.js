@@ -13,6 +13,7 @@ import Cart from './Components/Cart';
 import ShoeScreen from './screens/ShoeScreen';
 import PhoneScreen from './screens/PhoneScreen';
 import CosmeticScreen from './screens/CosmeticScreen';
+import DressScreen from './screens/DressScreen';
 
 
 
@@ -33,6 +34,7 @@ export default function App() {
         <Stack.Screen component={ShoeScreen} name="Shoes"  />
         <Stack.Screen component={PhoneScreen} name="Phones"   />
         <Stack.Screen component={CosmeticScreen} name="Cosmetics"   />
+        <Stack.Screen component={DressScreen} name="Dresses"   />
 
 
       </Stack.Navigator>

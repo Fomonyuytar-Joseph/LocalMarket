@@ -21,7 +21,7 @@ const categories = [
         heading: 'Dresses',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
-        screen:'Phones'
+        screen:'Dresses'
     },
     {
         id: 4,

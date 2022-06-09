@@ -2,12 +2,12 @@ const Cosmetics = [
   {
     id: 1,
     name: "Makeup Set",
-    img: require('../assets/images/Cosmetic/cm23.png'),
+    img: require('../assets/images/Cosmetic/cos1-removebg-preview.png'),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market ",
   },
-
+  // C:\Users\Fomonyuytar\Desktop\AppFolder\LocalMarket\assets\images\Cosmetic\cos1-removebg-preview.png
   {
     id: 2,
     name: "Makeup Set",
@@ -27,7 +27,7 @@ const Cosmetics = [
   {
     id: 3,
     name: "Makeup Set",
-    img: require("../assets/images/Cosmetic/cm4.jfif"),
+    img: require("../assets/images/Cosmetic/cos6.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -35,7 +35,7 @@ const Cosmetics = [
   {
     id: 4,
     name: "Makeup Set",
-    img: require("../assets/images/Cosmetic/cream.jfif"),
+    img: require("../assets/images/Cosmetic/cm23.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -43,7 +43,7 @@ const Cosmetics = [
   {
     id: 5,
     name: "Makeup Set",
-    img: require("../assets/images/Cosmetic/foundation.jfif"),
+    img: require("../assets/images/Cosmetic/cm23.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -52,7 +52,7 @@ const Cosmetics = [
   {
     id: 6,
     name: "Makeup Set",
-    img: require("../assets/images/Cosmetic/lip.jfif"),
+    img: require("../assets/images/Cosmetic/cos8.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -60,7 +60,7 @@ const Cosmetics = [
   {
     id: 7,
     name: "Makeup Set",
-    img: require("../assets/images/Cosmetic/lip2.jfif"),
+    img: require("../assets/images/Cosmetic/cos10.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -68,7 +68,7 @@ const Cosmetics = [
   {
     id: 8,
     name: "Makeup Set",
-    img: require("../assets/images/Cosmetic/lip3.jfif"),
+    img: require("../assets/images/Cosmetic/cm23.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -76,7 +76,7 @@ const Cosmetics = [
   {
     id: 9,
     name: "Makeup Set",
-    img: require("../assets/images/CosmeticsImages/lip3.jfif"),
+    img: require("../assets/images/Cosmetic/cm23.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
@@ -84,7 +84,7 @@ const Cosmetics = [
   {
     id: 10,
     name: "Makeup Set",
-    img: require("../assets/images/CosmeticsImages/paf.jfif"),
+    img: require("../assets/images/Cosmetic/cm23.png"),
     price: 3000,
     seller: "Makeup Club",
     description: "Affordable and best in the market",
