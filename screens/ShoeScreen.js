@@ -10,7 +10,7 @@ const ShoeScreen = ({navigation}) => {
     numColumns={2} 
     data={Shoes}
     renderItem={({item})=>(
-      <Card item={item}/>
+      <Card item={item} navigation={navigation}/>
     )}
     
     />

@@ -1,39 +1,61 @@
 import { View, Text, Image ,SafeAreaView ,FlatList  ,StyleSheet ,Dimensions ,TouchableOpacity} from 'react-native'
 import React from 'react'
 import values from '../const/values'
+import Icon from 'react-native-vector-icons/AntDesign';
 const { width } = Dimensions.get("screen")
-const Card = ({item}) => {
+const Card = ({item ,navigation}) => {
   return (
-    <TouchableOpacity >
+    <View style={{marginTop:20 ,marginBottom:8.5}}>
+    <TouchableOpacity onPress={navigation.navigate('ProductsDetails')} >
       <View style={[styles.container, {backgroundColor: 'white'}]}>
         <Image style={styles.image} source={item.img}/>
-          
-        <Text style={[values.h2Style, {marginTop: 10}]}>{item.name}</Text>
-        <Text style={[values.h2Style, {marginTop: 10}]}>{item.price}</Text>
+
+        <View style={styles.infocontainer} >  
+          <View>
+        <Text >{item.name}</Text>
+        <Text>{item.price}</Text>
+        </View>
+
+        <View style={{ marginLeft:50}}>
+        <Icon name="plussquare" size={28} color={'#6C63FF'} />
+        </View>
+
+        </View>
        
       </View>
     </TouchableOpacity>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
     container: {
-        width: width * 0.33,
-        height: 150,
-        borderRadius: 15,
-        marginRight: 10,
+        width: width /2.2,
+        height: 160,
+        borderRadius: 5,
+        marginLeft:12,
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom:30
+        marginBottom:5,
+       
     },
     image: {
-        width: 100,
+        width: 105,
         height: 100,
         shadowColor: "#000",
         shadowOpacity: 0.32,
 shadowRadius: 5.46,
 
 elevation: 9,
+    },
+    infocontainer:{
+      flexDirection:'row' ,
+      justifyContent:'space-around'
+      
+      
+
+
+
     }
 })
 export default Card
