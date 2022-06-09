@@ -7,7 +7,7 @@ const Greeter = ({user}) => {
     <View style={styles.container}>
       <View>
           <Text style={values.h1Style}>Hello, {user.name}</Text>
-          <Text style={values.pStyle}>Welcome back to your wallet!</Text>
+          <Text style={values.pStyle}></Text>
       </View>
       <Image style={styles.image} source={{uri: user.img}}/>
     </View>

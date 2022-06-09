@@ -26,6 +26,40 @@ const Homescreen = ({navigation}) => {
 
   const [carousel, setCarousel] = useState(null);
 
+  // const [cartItems, setCartItems] = useState([]);
+
+  
+  // var Total =  cartItems.reduce((a, c) => a + c.qty * c.price, 0);
+
+  // const onAdd = (product) => {
+  //   const exist = cartItems.find((x) => x.id === product.id);
+  //   if (exist) {
+  //     setCartItems(
+  //       cartItems.map((x) =>
+  //         x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+  //       )
+  //     );
+  //   } else {
+  //     setCartItems([...cartItems, { ...product, qty: 1 }]);
+  //   }
+  // };
+
+  // const onRemove = (product) => {
+  //   const exist = cartItems.find((x) => x.id === product.id);
+  //   if (exist.qty === 1) {
+  //     setCartItems(cartItems.filter((x) => x.id !== product.id));
+  //   } else {
+  //     setCartItems(
+  //       cartItems.map((x) =>
+  //         x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+  //       )
+  //     );
+  //   }
+  // };
+  // const onDelete =(product)=>{
+  //   setCartItems(cartItems.filter((x) =>x.id !== product.id))
+
+  // }
 
 
   return (
@@ -34,7 +68,7 @@ const Homescreen = ({navigation}) => {
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
                     img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
-                    name: 'Jose'
+                    name: 'John Doe'
                     }}/>
                     <Spacer height={20}/>
                     
@@ -50,7 +84,7 @@ const Homescreen = ({navigation}) => {
                 data={categories}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Category category={item} onPress={(val) => navigation.navigate(`${val}`)}/>}
+                renderItem={({ item }) => <Category category={item}  onPress={(val) => navigation.navigate(`${val}` )}/>}
             />
         </View>
         <View style={Sliderstyles.slider}>

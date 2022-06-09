@@ -5,7 +5,10 @@ import CartItems from './CartItems'
 
 
 
-const Cart = () => {
+const Cart = ({navigate ,route}) => {
+
+  // const item=route.params;
+
 const renderItem =({item})=>{
   return  <CartItems item={item}/>
 }
@@ -13,7 +16,7 @@ const renderItem =({item})=>{
  return (
     <View>
     <FlatList
-    data={Productdata}
+    data={Productdata}  
     renderItem={renderItem}
     keyExtractor={  item =>item.id}
     />

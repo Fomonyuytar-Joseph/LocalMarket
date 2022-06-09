@@ -5,6 +5,8 @@ import Phones from '../products/Phonedata'
 
 
 const PhoneScreen = ({navigation}) => {
+
+  // const cartItems=route.params;
   return (
     <View>
     <FlatList 

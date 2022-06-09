@@ -1,9 +1,16 @@
 import { View, Text, Image ,SafeAreaView ,FlatList  ,StyleSheet ,Dimensions ,TouchableOpacity} from 'react-native'
-import React from 'react'
+import {React,useState }from 'react'
 import values from '../const/values'
 import Icon from 'react-native-vector-icons/AntDesign';
 const { width } = Dimensions.get("screen")
-const Card = ({item ,navigation ,onPress}) => {
+
+
+const Card = ({item ,navigation ,onPress }) => {
+
+
+
+
+
   return (
     <View style={{marginTop:20 ,marginBottom:8.5}}>
     <TouchableOpacity onPress={onPress} >

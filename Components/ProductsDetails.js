@@ -1,11 +1,12 @@
 import {View, SafeAreaView, Image, Text, StyleSheet ,ScrollView,TouchableOpacity} from 'react-native';
-import React from 'react'
+import {React ,useState} from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {Sliderdata} from '../const/data'
 
 const ProductsDetails = ({navigation ,route}) => {
-
-  const item=route.params;
+    
+  
+  const item  =route.params;
   return (
     
     <SafeAreaView
@@ -14,9 +15,9 @@ const ProductsDetails = ({navigation ,route}) => {
         backgroundColor:'white',
         }}>
 <View   style={styles.header}>
-<Icon name="arrow-back" size={28} onPress={() => navigation.goBack()} />
+<Icon name="arrow-back" size={28} onPress={() => navigation.goBack()} color='#6C63FF' />
 <TouchableOpacity>
-<Icon name="shopping-cart" size={28} onPress={()=>navigation.navigate('Cart')}/>
+<Icon name="shopping-cart" size={28} onPress={()=>navigation.navigate('Cart' )} color='#6C63FF'/>
 </TouchableOpacity>
 
 </View>
@@ -98,12 +99,15 @@ const ProductsDetails = ({navigation ,route}) => {
               </View>
             </View>
 
+{/* {addd to Cart Button} */}
+<TouchableOpacity  onPress={()=>navigation.navigate('Cart')} >
             <View style={styles.buyBtn}>
               <Text
                 style={{color: 'white', fontSize: 18, fontWeight: 'bold'}}>
                 Add to Kart
               </Text>
             </View>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
