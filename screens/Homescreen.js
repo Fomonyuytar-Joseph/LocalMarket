@@ -50,7 +50,7 @@ const Homescreen = ({navigation}) => {
                 data={categories}
                 showsHorizontalScrollIndicator={false}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Category category={item} onPress={() =>navigation.navigate('Shoes')}  />}
+                renderItem={({ item }) => <Category category={item} onPress={(val) => navigation.navigate(`${val}`)}/>}
             />
         </View>
         <View style={Sliderstyles.slider}>

@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, TouchableOpacity, Dimensions, Image } from 'rea
 import React from 'react'
 import values from '../const/values'
 const { width } = Dimensions.get("screen")
-const Category = ({category, onPress}) => {
+const Category = ({category, navigation ,onPress}) => {
   return (
-    <TouchableOpacity onPress={ onPress}>
+    <TouchableOpacity onPress={()=>onPress(category.screen)}>
       <View style={[styles.container, {backgroundColor: 'white'}]}>
         <Image style={styles.image} source={category.img}/>
           

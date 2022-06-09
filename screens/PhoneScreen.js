@@ -1,14 +1,14 @@
-import { View, FlatList } from 'react-native'
+import { View, FlatList} from 'react-native'
 import React from 'react'
 import Card from '../Components/Card'
-import Shoes from '../products/Shoedata'
+import Phones from '../products/Phonedata'
 
-const ShoeScreen = ({navigation}) => {
+const PhoneScreen = ({navigation}) => {
   return (
     <View>
     <FlatList 
     numColumns={2} 
-    data={Shoes}
+    data={Phones}
     renderItem={({item})=>(
       <Card item={item} navigation={navigation} onPress={()=>navigation.navigate('ProductsDetails',item)}/>
     )}
@@ -20,4 +20,4 @@ const ShoeScreen = ({navigation}) => {
   )
 }
 
-export default ShoeScreen
+export default PhoneScreen
