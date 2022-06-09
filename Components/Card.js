@@ -3,10 +3,10 @@ import React from 'react'
 import values from '../const/values'
 import Icon from 'react-native-vector-icons/AntDesign';
 const { width } = Dimensions.get("screen")
-const Card = ({item ,navigation}) => {
+const Card = ({item ,navigation ,onPress}) => {
   return (
     <View style={{marginTop:20 ,marginBottom:8.5}}>
-    <TouchableOpacity onPress={navigation.navigate('ProductsDetails')} >
+    <TouchableOpacity onPress={onPress} >
       <View style={[styles.container, {backgroundColor: 'white'}]}>
         <Image style={styles.image} source={item.img}/>
 
