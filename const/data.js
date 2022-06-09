@@ -29,7 +29,7 @@ const categories = [
         heading: 'Cosmetics',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
-        screen:'Phones'
+        screen:'Cosmetics'
     }
 ];
 
