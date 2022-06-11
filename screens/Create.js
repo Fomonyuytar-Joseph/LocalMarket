@@ -12,7 +12,7 @@ function Create({navigation }) {
 
   const {height ,width}= Dimensions.get('window')
   onSignInPress=()=>{
-    navigation.navigate('Homescreen')
+    navigation.navigate('MainContainer')
   }
   onLoginPress=()=>{
     navigation.navigate('Login')

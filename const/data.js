@@ -145,5 +145,24 @@ const  NewProductdata=[
       img:require('../assets/NewImages/adidas2.jpg'),
   },
 ] 
+;
 
-export {categories,Sliderdata ,Productdata,Shopsdata ,NewProductdata}
+const Selectdata=[
+
+  {
+
+    id:1,
+    heading:'Buyer',
+    img:require('../assets/images/buyer.jpg'),
+    screen:'Create'
+  },
+  {
+
+    id:2,
+    heading:'Seller',
+    img:require('../assets/images/seller2.jpg'),
+    screen:'Create'
+  }
+]
+
+export {categories,Sliderdata ,Productdata,Shopsdata ,NewProductdata ,Selectdata}
