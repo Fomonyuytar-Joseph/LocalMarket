@@ -7,7 +7,12 @@ import { Selectdata } from "../const/data";
 const SelectScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-    <View style={{ paddingLeft: values.horizontalPadding }}>
+
+      <View>
+
+        <Text style={styles.text}> How do you want to use the app </Text>
+      </View>
+    <View style={{marginLeft:50}}>
     <FlatList
       numColumns={2}
       data={Selectdata}
@@ -29,9 +34,21 @@ const styles = StyleSheet.create({
 
     container:{
         flex:1,
-        flexDirection:'row',
+        flexDirection:'column',
         justifyContent:'center',
-        alignItems:'center'
+        
+        // alignItems:'center'
+        
+    },
+
+    text:{
+      fontSize:24 ,
+      fontWeight:'bold' , 
+      color:'#3C3C3C' , 
+      textAlign:'center',
+      marginBottom:140
+
+
     }
 
 
