@@ -161,7 +161,7 @@ const Selectdata=[
     id:2,
     heading:'Seller',
     img:require('../assets/images/seller2.jpg'),
-    screen:'Create'
+    screen:'SellerSignup'
   }
 ]
 

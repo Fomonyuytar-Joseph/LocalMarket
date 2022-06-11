@@ -24,6 +24,8 @@ import DressScreen from "./screens/DressScreen";
 import MainContainer from "./screens/MainContainer";
 import SelectScreen from "./screens/SelectScreen";
 import {LogBox} from "react-native";
+import SellerSignup from "./screens/SellerSignup";
+import SellerLogin from "./screens/SellerLogin";
 
 
 LogBox.ignoreLogs([
@@ -73,6 +75,8 @@ export default function App() {
         <Stack.Screen component={CosmeticScreen} name="Cosmetics" />
         <Stack.Screen component={DressScreen} name="Dresses" />
         <Stack.Screen component={SelectScreen} name="Select" />
+        <Stack.Screen component={SellerSignup} name="SellerSignup" />
+        <Stack.Screen component={SellerLogin} name="SellerLogin" />
       </Stack.Navigator>
     </NavigationContainer>
 
