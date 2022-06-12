@@ -24,6 +24,7 @@ function Create() {
     createUserWithEmailAndPassword(auth, email, password, username)
     .then(userCredentials => {
         const user = userCredentials.user;
+        navigation.replace('Homescreen')
         console.log('logged in as ', user.email)
     })
 

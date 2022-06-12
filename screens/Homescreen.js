@@ -1,5 +1,5 @@
 
-import { View, Text ,StyleSheet,SafeAreaView ,FlatList } from 'react-native'
+import { View, Text ,StyleSheet,SafeAreaView ,FlatList, ScrollView } from 'react-native'
 import React from 'react'
 import Greeter from '../Components/greeter'
 import styles from '../const/styles'

@@ -5,7 +5,6 @@ import Greeter from '../Components/greeter'
 import styles from '../const/styles'
 import Spacer from '../Components/Spacer'
 import Shoes from '../products/Shoedata'
-import { ScrollView } from 'react-native-gesture-handler'
 import Category from '../Components/Category'
 import Card from '../Components/Card'
 
