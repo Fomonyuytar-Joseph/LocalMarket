@@ -1,22 +1,47 @@
-import React ,{useState}from 'react'
+import React ,{useState, useEffect}from 'react'
 import { StyleSheet, Text, View ,SafeAreaView ,TouchableOpacity ,Image ,Button ,Dimensions} from 'react-native';
 import CustomButton from '../Components/CustomButton';
 import CustomInput from '../Components/CustomInput';
 import CustomLink from '../Components/CustomLink';
+import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../firebase'
+import { useNavigation } from '@react-navigation/native'
 
-function Create({navigation }) {
+
+
+function Create() {
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
+  const navigation = useNavigation()
+  
 
   const {height ,width}= Dimensions.get('window')
   onSignInPress=()=>{
-    navigation.navigate('Homescreen')
+    
+    createUserWithEmailAndPassword(auth, email, password, username)
+    .then(userCredentials => {
+        const user = userCredentials.user;
+        console.log('logged in as ', user.username)
+    })
+
+    .catch(error => alert(error.message))
+    
   }
   onLoginPress=()=>{
+    
     navigation.navigate('Login')
   }
+
+  useEffect(() => {
+    const onSubscribe = auth.onAuthStateChanged(user => {
+        if (user){
+            navigation.replace('Homescreen')
+        }
+    })
+    return onSubscribe
+}, [])
   return (
     <SafeAreaView 
     style={{

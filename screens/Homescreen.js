@@ -1,4 +1,4 @@
-import { View, Text ,StyleSheet,SafeAreaView ,FlatList} from 'react-native'
+import { View, Text ,StyleSheet,SafeAreaView ,FlatList, ScrollView} from 'react-native'
 import React from 'react'
 import Greeter from '../Components/greeter'
 import styles from '../const/styles'
@@ -12,7 +12,8 @@ import Carousel from 'react-native-snap-carousel'
 import { Dimensions } from 'react-native'
 import BannerSlider from '../Components/BannerSlider'
 import { useState } from 'react'
-import { ScrollView } from 'react-native-gesture-handler'
+import { auth } from '../firebase'
+
 
 const {height ,width}= Dimensions.get('window')
 
@@ -34,10 +35,10 @@ const Homescreen = ({navigation}) => {
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
                     img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
-                    name: 'Jose'
+                    name: auth.currentUser?.name
                     }}/>
                     <Spacer height={20}/>
-                    
+                    <Text>{auth.currentUser?.email}</Text>
                     <Homeinput placeholder='Search' icon='search-outline' />
                     <Spacer height={20} />
                     <Text style={values.h2Style}>Categories</Text>
