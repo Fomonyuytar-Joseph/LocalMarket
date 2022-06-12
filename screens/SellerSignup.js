@@ -14,7 +14,7 @@ const SellerSignup = ({navigation}) => {
 
   const {height ,width}= Dimensions.get('window')
   onSignInPress=()=>{
-    navigation.navigate('MainContainer')
+    navigation.navigate('SellerContainer')
   }
   onLoginPress=()=>{
     navigation.navigate('SellerLogin')

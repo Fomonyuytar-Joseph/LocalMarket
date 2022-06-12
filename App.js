@@ -26,6 +26,7 @@ import SelectScreen from "./screens/SelectScreen";
 import {LogBox} from "react-native";
 import SellerSignup from "./screens/SellerSignup";
 import SellerLogin from "./screens/SellerLogin";
+import SellerContainer from "./screens/SellerContainer";
 
 
 LogBox.ignoreLogs([
@@ -62,6 +63,11 @@ export default function App() {
         <Stack.Screen
           component={MainContainer}
           name="MainContainer"
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          component={SellerContainer}
+          name="SellerContainer"
           options={{ headerShown: false }}
         />
         <Stack.Screen
