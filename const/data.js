@@ -5,6 +5,7 @@ const categories = [
         heading: 'Shoe',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#F6AFB0',
+        screen:'Shoes'
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const categories = [
         heading: 'Phones',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#8ECC81',
+        screen:'Phones'
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ const categories = [
         heading: 'Dresses',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
+        screen:'Dresses'
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ const categories = [
         heading: 'Cosmetics',
         paragraph: 'Lorem Ipsum is simply dummy text',
         backgroundColor: '#80CEEE',
+        screen:'Cosmetics'
     }
 ];
 

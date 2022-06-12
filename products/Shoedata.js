@@ -13,7 +13,7 @@ const Shoes=[
 {
     id:2,
     name:'Nike Shoe',
-    img:require('../assets/SneakerImages/nike.png'),
+    img:require('../assets/SneakerImages/adidas5.jpg'),
     price:100000,
     seller:'Pa Shoe',
     description:'This Show is brand new and very affordable'
@@ -22,7 +22,7 @@ const Shoes=[
 {
     id:3,
     name:' Shoe',
-    img:require('../assets/SneakerImages/nike.png'),
+    img:require('../assets/SneakerImages/point.png'),
     price:10000,
     seller:'Pa Shoe',
     description:'This Show is brand new and very affordable'
@@ -52,7 +52,7 @@ const Shoes=[
     {
            id:6,
          name:'Shoe',
-        img:require('../assets/SneakerImages/shoe3.png'),
+        img:require('../assets/SneakerImages/adidas.jpg'),
           price:10000,
          seller:'Pa Sho',
           description:'This Show is brand new and very affordable'
@@ -90,7 +90,7 @@ const Shoes=[
     {
            id:10,
          name:'Classic Shoe',
-        img:require('../assets/SneakerImages/nike3.png'),
+        img:require('../assets/SneakerImages/schoolShoe.jpg'),
           price:10000,
          seller:'Pa Shoe',
          

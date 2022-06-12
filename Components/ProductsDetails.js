@@ -1,9 +1,12 @@
-import {View, SafeAreaView, Image, Text, StyleSheet ,ScrollView} from 'react-native';
-import React from 'react'
+import {View, SafeAreaView, Image, Text, StyleSheet ,ScrollView,TouchableOpacity} from 'react-native';
+import {React ,useState} from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {Sliderdata} from '../const/data'
 
-const ProductsDetails = ({navigation}) => {
+const ProductsDetails = ({navigation ,route}) => {
+    
+  
+  const item  =route.params;
   return (
     
     <SafeAreaView
@@ -12,14 +15,16 @@ const ProductsDetails = ({navigation}) => {
         backgroundColor:'white',
         }}>
 <View   style={styles.header}>
-<Icon name="arrow-back" size={28} onPress={() => navigation.goBack()} />
-<Icon name="shopping-cart" size={28} />
+<Icon name="arrow-back" size={28} onPress={() => navigation.goBack()} color='#6C63FF' />
+<TouchableOpacity>
+<Icon name="shopping-cart" size={28} onPress={()=>navigation.navigate('Cart' )} color='#6C63FF'/>
+</TouchableOpacity>
 
 </View>
 
 <View style={styles.imageContainer} >
 
-<Image  source={require('../assets/images/plant1.png')} style={{resizeMode: 'contain', flex: 1}}/>
+<Image  source={item.img} style={{resizeMode: 'contain', flex: 1}}/>
 
 {/* <Text>Hiu</Text> */}
 </View>
@@ -31,7 +36,7 @@ const ProductsDetails = ({navigation}) => {
             alignItems: 'flex-end',
           }}>
           <View style={styles.line} />
-          <Text style={{fontSize: 18, fontWeight: 'bold'}}>Best choice</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold'}}>{item.name}</Text>
         </View>
         <View
           style={{
@@ -41,7 +46,9 @@ const ProductsDetails = ({navigation}) => {
             justifyContent: 'space-between',
             alignItems: 'center',
           }}>
-          <Text style={{fontSize: 22, fontWeight: 'bold'}}>Dragon Plant</Text>
+          <Text style={{fontSize: 22, fontWeight: 'bold'}}>Vendor:  {item.seller}</Text>
+
+          {/* item Price */}
           <View style={styles.priceTag}>
             <Text
               style={{
@@ -49,8 +56,8 @@ const ProductsDetails = ({navigation}) => {
                 color: 'white',
                 fontWeight: 'bold',
                 fontSize: 16,
-              }}>
-              $2000
+              }}>  
+              {item.price}       
             </Text>
           </View>
         </View>
@@ -63,7 +70,7 @@ const ProductsDetails = ({navigation}) => {
               lineHeight: 22,
               marginTop: 10,
             }}>
-            orem ipsum dolor sit amet.   Est facilis molestiae est molestiae reprehenderit non sint maxime et quos placeat et dolor nesciunt est
+            {item.description}
           </Text>
           <View
             style={{
@@ -92,12 +99,15 @@ const ProductsDetails = ({navigation}) => {
               </View>
             </View>
 
+{/* {addd to Cart Button} */}
+<TouchableOpacity  onPress={()=>navigation.navigate('Cart')} >
             <View style={styles.buyBtn}>
               <Text
                 style={{color: 'white', fontSize: 18, fontWeight: 'bold'}}>
-                Buy
+                Add to Kart
               </Text>
             </View>
+            </TouchableOpacity>
           </View>
         </View>
       </View>

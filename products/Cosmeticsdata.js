@@ -1,112 +1,94 @@
+const Cosmetics = [
+  {
+    id: 1,
+    name: "Makeup Set",
+    img: require('../assets/images/Cosmetic/cos1-removebg-preview.png'),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market ",
+  },
+  // C:\Users\Fomonyuytar\Desktop\AppFolder\LocalMarket\assets\images\Cosmetic\cos1-removebg-preview.png
+  {
+    id: 2,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm2.webp"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market ",
+  },
+  {
+    id: 3,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm3.jpg"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market ",
+  },
+  {
+    id: 3,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cos6.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+  {
+    id: 4,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm23.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+  {
+    id: 5,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm23.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
 
+  {
+    id: 6,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cos8.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+  {
+    id: 7,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cos10.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+  {
+    id: 8,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm23.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+  {
+    id: 9,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm23.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+  {
+    id: 10,
+    name: "Makeup Set",
+    img: require("../assets/images/Cosmetic/cm23.png"),
+    price: 3000,
+    seller: "Makeup Club",
+    description: "Affordable and best in the market",
+  },
+];
 
-const Cosmetics=[
-
-    {
-        id:1,
-        name:'',
-        img:'',
-        price:'',
-        seller:'',
-        description:''
-    
-    },
-    {
-        id:2,
-        name:'',
-        img:'',
-        price:'',
-        seller:'',
-        description:''
-    
-    },
-    {
-        id:3,
-        name:'',
-        img:'',
-        price:'',
-        seller:'',
-        description:''
-    
-    },
-        {
-               id:3,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-        {
-               id:4,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                
-            },
-        {
-               id:5,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-    
-        {
-               id:6,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-        {
-               id:7,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-        {
-               id:8,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-        {
-               id:9,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-        {
-               id:10,
-             name:'',
-            img:'',
-              price:'',
-             seller:'',
-              description:''
-    
-                },
-    
-    
-    
-    
-    ]
-    
-    export default Cosmetics
+export default Cosmetics;
