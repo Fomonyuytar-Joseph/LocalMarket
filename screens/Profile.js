@@ -3,7 +3,6 @@ import { View, Text  ,StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import InitialLogo from '../Components/InitialLogo'
 import { signOut } from 'firebase/auth';
-import React from 'react';
 import { auth } from '../firebase';
 import { useNavigation } from '@react-navigation/native';
 

@@ -1,5 +1,6 @@
 import { View, Text ,StyleSheet } from "react-native";
 import React from "react";
+import { auth } from "../firebase";
 
 const InitialLogo = () => {
   const name = "Queen";
@@ -40,7 +41,7 @@ const InitialLogo = () => {
       
     </View>
     <View style={{textAlign:'center',justifyContent:'center' ,alignContent:'center'}}>
-     <Text style={styles.userText}>Nfongeh Queen</Text> 
+     <Text style={styles.userText}>{auth.currentUser?.email}</Text> 
 
       </View>
 

@@ -16,6 +16,7 @@ const Login = ({navigation}) => {
     signInWithEmailAndPassword(auth, email, password)
     .then(userCredentials => {
         const user = userCredentials.user;
+        navigation.replace('HomeScreen')
         console.log('logged in as ', user.email)
     })
 

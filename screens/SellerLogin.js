@@ -2,10 +2,13 @@ import { View, Text ,SafeAreaView ,Dimensions ,Image ,StyleSheet } from 'react-n
 import React ,{useState}from 'react'
 import CustomButton from '../Components/CustomButton'
 import CustomInput from '../Components/CustomInput'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../firebase'
+import { useNavigation } from '@react-navigation/native'
 
 
 const {height , width}= Dimensions.get('window')
-const SellerLogin = ({navigation}) => {
+const SellerLogin = () => {
    
 
 
@@ -13,7 +16,20 @@ const SellerLogin = ({navigation}) => {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const navigation = useNavigation()
 
+  const onSignInPress = () =>{
+    signInWithEmailAndPassword(auth, email, password)
+    .then(userCredentials => {
+        const user = userCredentials.user;
+        navigation.replace('SellerContainer')
+        console.log('logged in as ', user.email)
+    })
+
+    .catch(error => alert(error.message))
+  }
+  
+  
   
 
   
@@ -50,7 +66,7 @@ const SellerLogin = ({navigation}) => {
 
    </SafeAreaView>
   )
-}
+  }
 
 
 const styles=StyleSheet.create({

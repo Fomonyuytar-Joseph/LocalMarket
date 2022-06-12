@@ -27,6 +27,7 @@ import {LogBox} from "react-native";
 import SellerSignup from "./screens/SellerSignup";
 import SellerLogin from "./screens/SellerLogin";
 import SellerContainer from "./screens/SellerContainer";
+import Profile from "./screens/Profile";
 
 
 LogBox.ignoreLogs([
@@ -75,6 +76,11 @@ export default function App() {
           name="ProductsDetails"
           options={{ headerShown: false }}
         />
+         <Stack.Screen
+          component={Homescreen}
+          name="HomeScreen"
+          options={{ headerShown: false }}
+        />
         <Stack.Screen component={Cart} name="Cart" />
 
 
@@ -88,6 +94,8 @@ export default function App() {
         <Stack.Screen component={SelectScreen} name="Select" />
         <Stack.Screen component={SellerSignup} name="SellerSignup" />
         <Stack.Screen component={SellerLogin} name="SellerLogin" />
+        <Stack.Screen component={Profile} name="Profile" />
+        
 
       </Stack.Navigator>
     </NavigationContainer>
