@@ -21,6 +21,10 @@ const Login = ({navigation}) => {
 
     .catch(error => alert(error.message))
   }
+
+  const onSignup = () => {
+    navigation.replace('Create')
+  }
   
   return (
    <SafeAreaView style={{flex:1 ,backgroundColor:'white'}}>
@@ -43,8 +47,13 @@ const Login = ({navigation}) => {
 
        </View>
 
-       <Text style={{color:'#6C63FF'}}>Login</Text> 
+       
+       <Text style={{color:'black', fontSize:16, textAlign:'center'}}>Don't have an account?</Text>
+       <Text style={{color:'#6C63FF', textAlign:'center', fontSize:16}} onPress={onSignup}>Sign Up</Text> 
       
+    
+
+       
      </View>
 
 
@@ -71,7 +80,20 @@ const styles=StyleSheet.create({
      fontSize:36,
      color:'#3C3C3C'
 
+   },
+
+   containerCreate: {
+     flex:1,
+     flexDirection:'row',
+     justifyContent: 'center',
+     
+
+     marginTop:70
+    
+     
    }
+
+
 
 
 })
