@@ -1,10 +1,11 @@
-import { View, Text ,StyleSheet,SafeAreaView ,FlatList, ScrollView} from 'react-native'
+
+import { View, Text ,StyleSheet,SafeAreaView ,FlatList } from 'react-native'
 import React from 'react'
 import Greeter from '../Components/greeter'
 import styles from '../const/styles'
 import Spacer from '../Components/Spacer'
 import Category from '../Components/Category'
-import Homebutton from '../Components/Homebutton'
+
 import Homeinput from '../Components/Homeinput'
 import values from '../const/values'
 import { categories, Shopsdata ,Sliderdata ,NewProductdata } from '../const/data'

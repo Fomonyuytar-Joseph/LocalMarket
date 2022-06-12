@@ -1,13 +1,16 @@
-import { useNavigation } from '@react-navigation/native';
+
+import { View, Text  ,StyleSheet, TouchableOpacity } from 'react-native'
+import React from 'react'
+import InitialLogo from '../Components/InitialLogo'
 import { signOut } from 'firebase/auth';
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import CustomButton from '../Components/CustomButton';
 import { auth } from '../firebase';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Profile = () => {
-
-    const navigation = useNavigation()
+  
+  const navigation = useNavigation()
 
     const handleSignOut = () => {
         signOut(auth)
@@ -17,32 +20,47 @@ const Profile = () => {
 
         .catch(error => alert(error.message))
     }
-    return (
-        <View style={styles.container}>
-            <Text style ={styles.profileText}>Welcome {auth.currentUser?.email}</Text>
-            <CustomButton onSignInPress={handleSignOut} Btext='Log Out'>
-               
-            </CustomButton>
-        </View>
-    );
+  return (
+    <View style={{flex:1, justifyContent:'center',alignItems:'center'}}>
+      <View>
+      <InitialLogo/>
+      </View>
+      <View>
+
+{/* Log Out button */}
+      <TouchableOpacity style={styles.container} onPress={handleSignOut} >
+    <View >
+      <Text style={styles.text}>Log Out</Text>
+    </View>
+    </TouchableOpacity>
+        
+      </View>
+
+      
+    </View>
+  )
 }
 
-const styles = StyleSheet.create({
+const styles =StyleSheet.create({
+  container:{
+      backgroundColor:'#6C63FF',
+       width:'95%',
+      padding:15,
+      marginVertical:40,
+      alignItems:'center',
+      borderRadius:15,
+      marginLeft:20,
+      marginRight:20
+  },
+  text:{
+      color:'white',
+      fontWeight:'bold',
+      fontSize:16
+      
+      
+  }
 
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    customText: {
-        color: 'white'
-    },
-
-    profileText: {
-        fontSize: 24,
-        marginTop: 10,
-        fontWeight: 'bold'
-    }
 })
 
-export default Profile;
+export default Profile
+

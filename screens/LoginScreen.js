@@ -36,7 +36,7 @@ function LoginScreen({navigation}) {
        <View style={{marginBottom:20  } }>
       <View style={{flexDirection:'row'}}>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Create')}
+        <TouchableOpacity onPress={()=>navigation.navigate('Select')}
         style={{flex:1 ,height:60 ,backgroundColor:'#6C63FF' ,borderRadius:15,
         justifyContent:'center',alignItems:'center', marginLeft:15 ,marginRight:15 } }>
           <Text style={{color:'white' ,fontSize:20}} >Get Shopping</Text>
