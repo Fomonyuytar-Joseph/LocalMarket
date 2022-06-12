@@ -76,6 +76,11 @@ export default function App() {
           options={{ headerShown: false }}
         />
         <Stack.Screen component={Cart} name="Cart" />
+
+
+
+
+
         <Stack.Screen component={ShoeScreen} name="Shoes" />
         <Stack.Screen component={PhoneScreen} name="Phones" />
         <Stack.Screen component={CosmeticScreen} name="Cosmetics" />
@@ -83,6 +88,7 @@ export default function App() {
         <Stack.Screen component={SelectScreen} name="Select" />
         <Stack.Screen component={SellerSignup} name="SellerSignup" />
         <Stack.Screen component={SellerLogin} name="SellerLogin" />
+
       </Stack.Navigator>
     </NavigationContainer>
 
