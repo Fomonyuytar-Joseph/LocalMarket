@@ -42,6 +42,8 @@ const Login = ({navigation}) => {
 
 
        </View>
+
+       <Text style={{color:'#6C63FF'}}>Login</Text> 
       
      </View>
 

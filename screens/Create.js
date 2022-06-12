@@ -23,7 +23,7 @@ function Create() {
     createUserWithEmailAndPassword(auth, email, password, username)
     .then(userCredentials => {
         const user = userCredentials.user;
-        console.log('logged in as ', user.username)
+        console.log('logged in as ', user.email)
     })
 
     .catch(error => alert(error.message))
@@ -60,6 +60,7 @@ function Create() {
 
       <CustomButton navigation={navigation} Btext="Create Account" onSignInPress={onSignInPress}/>
       <CustomLink navigation={navigation} onLoginPress={onLoginPress}/>
+
       </View>
       
    

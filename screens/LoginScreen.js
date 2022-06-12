@@ -29,7 +29,7 @@ function LoginScreen({navigation}) {
         marginTop:15,
         marginBottom:40
         }}>
-          Shopping has never made this easy for you now
+          Shopping has never been made this easy for you now
         </Text>
 
     

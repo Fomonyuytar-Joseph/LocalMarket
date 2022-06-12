@@ -13,12 +13,13 @@ import { Dimensions } from 'react-native'
 import BannerSlider from '../Components/BannerSlider'
 import { useState } from 'react'
 import { auth } from '../firebase'
+import { useNavigation } from '@react-navigation/native'
 
 
 const {height ,width}= Dimensions.get('window')
 
 
-const Homescreen = ({navigation}) => {
+const Homescreen = () => {
      
   const renderBanner=({item, index})=>{
     return <BannerSlider data={item} />;
@@ -26,6 +27,11 @@ const Homescreen = ({navigation}) => {
   }
 
   const [carousel, setCarousel] = useState(null);
+
+  const navigation = useNavigation()
+  const onUserPress = () =>{
+    navigation.navigate('Profile')
+  }
 
   // const [cartItems, setCartItems] = useState([]);
 
@@ -68,13 +74,16 @@ const Homescreen = ({navigation}) => {
       <ScrollView>
         <View style={styles.horizontalPaddingView}>
       <Greeter user={{
-                    img: 'https://yt3.ggpht.com/ytc/AKedOLTkTJuNwAOnHrFVGRLwbncwovkgiqXjD2ceQYuKDA=s900-c-k-c0x00ffffff-no-rj',
+                    img: '',
 
                
            
-                    }}/>
+                    }}
+onUserPress={onUserPress} navigate={navigation}
+                    />
+                     <Text onPress={onUserPress}>{auth.currentUser?.email}</Text>
                     <Spacer height={20}/>
-                    <Text>{auth.currentUser?.email}</Text>
+                   
                     <Homeinput placeholder='Search' icon='search-outline' />
                     <Spacer height={20} />
                     <Text style={values.h2Style}>Categories</Text>

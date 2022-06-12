@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import values from '../const/values'
 
-const Greeter = ({user}) => {
+const Greeter = ({user, navigation, onUserPress}) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} onPress={onUserPress}>
       <View>
           <Text style={values.h1Style}>Hello, {user.name}</Text>
           <Text style={values.pStyle}></Text>

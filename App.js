@@ -14,6 +14,7 @@ import ShoeScreen from './screens/ShoeScreen';
 import PhoneScreen from './screens/PhoneScreen';
 import CosmeticScreen from './screens/CosmeticScreen';
 import DressScreen from './screens/DressScreen';
+import Profile from './screens/Profile';
 
 
 
@@ -35,6 +36,8 @@ export default function App() {
         <Stack.Screen component={PhoneScreen} name="Phones"   />
         <Stack.Screen component={CosmeticScreen} name="Cosmetics"   />
         <Stack.Screen component={DressScreen} name="Dresses"   />
+        <Stack.Screen component={Profile} name="Profile"   />
+
 
 
       </Stack.Navigator>
